@@ -1,0 +1,59 @@
+<h1>New log</h1>
+
+<% form_for(@log) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :host %><br />
+    <%= f.text_field :host %>
+  </p>
+  <p>
+    <%= f.label :facility %><br />
+    <%= f.text_field :facility %>
+  </p>
+  <p>
+    <%= f.label :priority %><br />
+    <%= f.text_field :priority %>
+  </p>
+  <p>
+    <%= f.label :level %><br />
+    <%= f.text_field :level %>
+  </p>
+  <p>
+    <%= f.label :tag %><br />
+    <%= f.text_field :tag %>
+  </p>
+  <p>
+    <%= f.label :datetime %><br />
+    <%= f.datetime_select :datetime %>
+  </p>
+  <p>
+    <%= f.label :program %><br />
+    <%= f.text_field :program %>
+  </p>
+  <p>
+    <%= f.label :msg %><br />
+    <%= f.text_area :msg %>
+  </p>
+  <p>
+    <%= f.label :seq %><br />
+    <%= f.text_field :seq %>
+  </p>
+  <p>
+    <%= f.label :counter %><br />
+    <%= f.text_field :counter %>
+  </p>
+  <p>
+    <%= f.label :fo %><br />
+    <%= f.datetime_select :fo %>
+  </p>
+  <p>
+    <%= f.label :lo %><br />
+    <%= f.datetime_select :lo %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', logs_path %>

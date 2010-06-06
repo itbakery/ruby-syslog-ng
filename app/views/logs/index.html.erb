@@ -1,0 +1,44 @@
+<h1>Listing logs</h1>
+
+<%= will_paginate %><br />
+
+<table>
+  <tr>
+    <th>Host</th>
+    <th>Facility</th>
+    <th>Priority</th>
+    <th>Level</th>
+    <th>Tag</th>
+    <th>Datetime</th>
+    <th>Program</th>
+    <th>Msg</th>
+    <th>Seq</th>
+    <th>Counter</th>
+    <th>Fo</th>
+    <th>Lo</th>
+  </tr>
+
+<% @logs.each do |log| %>
+  <tr>
+    <td><%=h log.host %></td>
+    <td><%=h log.facility %></td>
+    <td><%=h log.priority %></td>
+    <td><%=h log.level %></td>
+    <td><%=h log.tag %></td>
+    <td><%=h log.datetime %></td>
+    <td><%=h log.program %></td>
+    <td><%=h log.msg %></td>
+    <td><%=h log.seq %></td>
+    <td><%=h log.counter %></td>
+    <td><%=h log.fo %></td>
+    <td><%=h log.lo %></td>
+    <td><%= link_to 'Show', log %></td>
+    <td><%= link_to 'Edit', edit_log_path(log) %></td>
+    <td><%= link_to 'Destroy', log, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= will_paginate %>

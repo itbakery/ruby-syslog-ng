@@ -1,0 +1,29 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  host: MyString
+  facility: MyString
+  priority: MyString
+  level: MyString
+  tag: MyString
+  datetime: 2010-06-06 04:01:50
+  program: MyString
+  msg: MyText
+  seq: 1
+  counter: 1
+  fo: 2010-06-06 04:01:50
+  lo: 2010-06-06 04:01:50
+
+two:
+  host: MyString
+  facility: MyString
+  priority: MyString
+  level: MyString
+  tag: MyString
+  datetime: 2010-06-06 04:01:50
+  program: MyString
+  msg: MyText
+  seq: 1
+  counter: 1
+  fo: 2010-06-06 04:01:50
+  lo: 2010-06-06 04:01:50
